@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Draw {
+    //必要なリストの用意。
     List<String> MyCards = new ArrayList();
     List<Integer> markhorder = new ArrayList();
     List<Integer> numberhorder = new ArrayList();
@@ -12,6 +13,7 @@ public class Draw {
     List<Integer> cards2 = new ArrayList();
     List<Integer> cards3 = new ArrayList();
     List<Integer> cards4 = new ArrayList();
+
     public Draw(List<String> mycards, List<Integer> horderM, List<Integer> horderN, List<Integer> c1, List<Integer> c2, List<Integer> c3, List<Integer> c4){
 
     }
@@ -23,7 +25,9 @@ public class Draw {
             i++;
         }
     }
+
     //作った山札からカードを引くメソッド。
+    //引いたカードをmycardsに入れていく。
     //引いたカードのマークと数字をhorderM, horderNに保存する。
     public void drawcards(List<String> mycards, List<Integer> horderM, List<Integer> horderN, List<Integer> c1, List<Integer> c2, List<Integer> c3, List<Integer> c4) {
         int drawcard;
@@ -50,6 +54,7 @@ public class Draw {
     }
 
     //手札を入れ替えるメソッド
+    //Playerに手札を入れ替えるかを聞く。
     //list, horderM, horderN, から削除し、drawcards()でカードを引く。
     public void Remycards(List<String> list, List<Integer> horderM, List<Integer> horderN, List<Integer> c1, List<Integer> c2, List<Integer> c3, List<Integer> c4) {
         String input;
